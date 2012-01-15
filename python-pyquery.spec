@@ -14,6 +14,7 @@ Url:		https://bitbucket.org/olauzanne/pyquery/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Requires:	python-lxml >= 2.1
+BuildRequires:	python-setuptools
 BuildRequires:	python-lxml >= 2.1
 
 %description
