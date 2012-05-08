@@ -1,7 +1,7 @@
 %define	module	pyquery
 %define name	python-%{module}
-%define version	1.1.1
-%define release %mkrel 1
+%define version	1.2.1
+%define release 1
 
 Summary:	jQuery-like library for Python
 Name:		%{name}
@@ -14,6 +14,7 @@ Url:		https://bitbucket.org/olauzanne/pyquery/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Requires:	python-lxml >= 2.1
+Requires:	python-cssselect
 BuildRequires:	python-setuptools
 BuildRequires:	python-lxml >= 2.1
 
