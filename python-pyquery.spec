@@ -37,3 +37,14 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 %defattr(-,root,root)
 %doc *.txt
 %py_sitedir/%{module}*
+
+
+%changelog
+* Tue May 08 2012 Lev Givon <lev@mandriva.org> 1.2.1-1
++ Revision: 797583
+- Update to 1.2.1.
+
+* Sun Jan 15 2012 Lev Givon <lev@mandriva.org> 1.1.1-1
++ Revision: 760886
+- imported package python-pyquery
+
