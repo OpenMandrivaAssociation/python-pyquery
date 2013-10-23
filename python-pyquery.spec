@@ -5,13 +5,12 @@
 
 Summary:	jQuery-like library for Python
 Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-Source0:	http://pypi.python.org/packages/source/p/%{module}/%{module}-%{version}.tar.gz
+Version:	1.2.4
+Release:	1
+Source0:	http://pypi.python.org/packages/source/p/pip/pyquery-%{version}.tar.gz
 License:	BSD
 Group:		Development/Python
 Url:		https://bitbucket.org/olauzanne/pyquery/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Requires:	python-lxml >= 2.1
 Requires:	python-cssselect
@@ -27,16 +26,13 @@ fast xml and html manipulation.
 %setup -q -n %{module}-%{version}
 
 %install
-%__rm -rf %{buildroot}
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 
 %clean
-%__rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc *.txt
-%py_sitedir/%{module}*
+%py_puresitedir/%{module}*
 
 
 %changelog
@@ -47,4 +43,5 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 * Sun Jan 15 2012 Lev Givon <lev@mandriva.org> 1.1.1-1
 + Revision: 760886
 - imported package python-pyquery
+
 
