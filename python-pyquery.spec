@@ -31,7 +31,7 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 %clean
 
 %files
-%doc *.txt
+%doc *
 %py_puresitedir/%{module}*
 
 
