@@ -1,13 +1,11 @@
 %define	module	pyquery
-%define name	python-%{module}
-%define version	1.2.1
-%define release 1
 
-Summary:	jQuery-like library for Python
-Name:		%{name}
-Version:	1.2.4
+Summary:	JQuery-like library for Python
+
+Name:		python-%{module}
+Version:	1.2.8
 Release:	1
-Source0:	http://pypi.python.org/packages/source/p/pip/pyquery-%{version}.tar.gz
+Source0:	http://pypi.python.org/packages/source/p/pyquery/pyquery-%{version}.zip
 License:	BSD
 Group:		Development/Python
 Url:		https://bitbucket.org/olauzanne/pyquery/
@@ -32,16 +30,7 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
 
 %files
 %doc *
-%py_puresitedir/%{module}*
+%{py_puresitedir}/%{module}*
 
-
-%changelog
-* Tue May 08 2012 Lev Givon <lev@mandriva.org> 1.2.1-1
-+ Revision: 797583
-- Update to 1.2.1.
-
-* Sun Jan 15 2012 Lev Givon <lev@mandriva.org> 1.1.1-1
-+ Revision: 760886
-- imported package python-pyquery
 
 
