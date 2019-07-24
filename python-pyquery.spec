@@ -3,9 +3,9 @@
 Summary:	JQuery-like library for Python
 
 Name:		python-%{module}
-Version:	1.2.8
-Release:	2
-Source0:	http://pypi.python.org/packages/source/p/pyquery/pyquery-%{version}.zip
+Version:	1.4.0
+Release:	1
+Source0:	https://files.pythonhosted.org/packages/e4/46/596311bb390c902b61499ff9fd5a355cdf85c8455737cb0f08c6c2c13e22/pyquery-1.4.0.tar.gz
 License:	BSD
 Group:		Development/Python
 Url:		https://bitbucket.org/olauzanne/pyquery/

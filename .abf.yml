@@ -1,5 +1,2 @@
-removed_sources:
-  pyquery-1.2.1.tar.gz: b266bc3abed797766b48266ac870fbcfcc64f948
-  pyquery-1.2.4.tar.gz: abd3a3daf953f593a3bc6601b37b4c5b3ac83768
 sources:
-  pyquery-1.2.8.zip: f9030d313bad187bd0c407132fe17633efef8199
+  pyquery-1.4.0.tar.gz: 114f5669a5a74f9980fe5f66115ca396e8ebc433
