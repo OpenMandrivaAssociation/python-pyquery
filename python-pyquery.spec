@@ -3,9 +3,9 @@
 Summary:	JQuery-like library for Python
 
 Name:		python-%{module}
-Version:	1.4.0
+Version:	2.1.0
 Release:	1
-Source0:	https://files.pythonhosted.org/packages/e4/46/596311bb390c902b61499ff9fd5a355cdf85c8455737cb0f08c6c2c13e22/pyquery-1.4.0.tar.gz
+Source0:	https://files.pythonhosted.org/packages/e4/46/596311bb390c902b61499ff9fd5a355cdf85c8455737cb0f08c6c2c13e22/pyquery-2.1.0.tar.gz
 License:	BSD
 Group:		Development/Python
 Url:		https://bitbucket.org/olauzanne/pyquery/
@@ -21,7 +21,7 @@ is as much as possible the similar to jquery. pyquery uses lxml for
 fast xml and html manipulation.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n pyquery-2.1.0
 
 %install
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot}
